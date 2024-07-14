@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_b0b11ef5aa0a47b7c826ef7a749ccb51 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_b0b11ef5aa0a47b7c826ef7a749ccb51" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_b0b11ef5aa0a47b7c826ef7a749ccb51 = L.map(
+                "map_b0b11ef5aa0a47b7c826ef7a749ccb51",
+                {
+                    center: [20.5937, 78.9629],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 8,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_54a58b06d5f058d0c47b6e49b601dc25 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_54a58b06d5f058d0c47b6e49b601dc25.addTo(map_b0b11ef5aa0a47b7c826ef7a749ccb51);
+        
+    
+            var poly_line_ee5f81a18d9a7c96fcd0d0251ca5ae12 = L.polyline(
+                [[20.7025, 78.6022], [20.2787, 78.2757], [19.9512, 77.7859]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_b0b11ef5aa0a47b7c826ef7a749ccb51);
+        
+    
+            var poly_line_c6a9a6d62d2180ebadb4a6c8c0646309 = L.polyline(
+                [[20.9952, 79.0013], [20.7325, 78.5448], [20.5237, 77.8036], [20.7359, 76.5638]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_b0b11ef5aa0a47b7c826ef7a749ccb51);
+        
+    
+            var poly_line_c62b266ff400d6727ae70ce3936f44c5 = L.polyline(
+                [[21.1458, 79.0882], [21.4456, 79.3671], [21.7649, 79.6498], [21.9042, 80.2458]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_b0b11ef5aa0a47b7c826ef7a749ccb51);
+        
+    
+            var marker_044fcab85cb3d2c045beb168adbfedaf = L.marker(
+                [20.9847, 79.0246],
+                {}
+            ).addTo(map_b0b11ef5aa0a47b7c826ef7a749ccb51);
+        
+    
+            var icon_38b8439fc512acf189bec94aa8c6f862 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_044fcab85cb3d2c045beb168adbfedaf.setIcon(icon_38b8439fc512acf189bec94aa8c6f862);
+        
+    
+        var popup_c5c3c72bedf744d248e798f3468dd32c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_77d8f3200d5d9ba29e4b572acc2dbfc7 = $(`<div id="html_77d8f3200d5d9ba29e4b572acc2dbfc7" style="width: 100.0%; height: 100.0%;">Nagpur Toll Plaza</div>`)[0];
+                popup_c5c3c72bedf744d248e798f3468dd32c.setContent(html_77d8f3200d5d9ba29e4b572acc2dbfc7);
+            
+        
+
+        marker_044fcab85cb3d2c045beb168adbfedaf.bindPopup(popup_c5c3c72bedf744d248e798f3468dd32c)
+        ;
+
+        
+    
+    
+            var marker_a58de59d4e7c327eab8aa2d3bd9f241b = L.marker(
+                [20.7456, 78.589],
+                {}
+            ).addTo(map_b0b11ef5aa0a47b7c826ef7a749ccb51);
+        
+    
+            var icon_1842aa5f5ded2df2205fad75cb0d1ca2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a58de59d4e7c327eab8aa2d3bd9f241b.setIcon(icon_1842aa5f5ded2df2205fad75cb0d1ca2);
+        
+    
+        var popup_09cf20ba946ec9e6b0828ab5c8c25277 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e799e1d454e9dcc58c512b21ac0469fd = $(`<div id="html_e799e1d454e9dcc58c512b21ac0469fd" style="width: 100.0%; height: 100.0%;">Wardha Toll Plaza</div>`)[0];
+                popup_09cf20ba946ec9e6b0828ab5c8c25277.setContent(html_e799e1d454e9dcc58c512b21ac0469fd);
+            
+        
+
+        marker_a58de59d4e7c327eab8aa2d3bd9f241b.bindPopup(popup_09cf20ba946ec9e6b0828ab5c8c25277)
+        ;
+
+        
+    
+    
+            var marker_1ed37e1aa9cc1af2242b13bd2155a966 = L.marker(
+                [20.5543, 77.8235],
+                {}
+            ).addTo(map_b0b11ef5aa0a47b7c826ef7a749ccb51);
+        
+    
+            var icon_1e7cc665484118e0a1e9e05476a4544c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_1ed37e1aa9cc1af2242b13bd2155a966.setIcon(icon_1e7cc665484118e0a1e9e05476a4544c);
+        
+    
+        var popup_26fa1ad71cb188b14852d3f5f94e7458 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_15fec1f34c631d4a79230871a80cc578 = $(`<div id="html_15fec1f34c631d4a79230871a80cc578" style="width: 100.0%; height: 100.0%;">Amravati Toll Plaza</div>`)[0];
+                popup_26fa1ad71cb188b14852d3f5f94e7458.setContent(html_15fec1f34c631d4a79230871a80cc578);
+            
+        
+
+        marker_1ed37e1aa9cc1af2242b13bd2155a966.bindPopup(popup_26fa1ad71cb188b14852d3f5f94e7458)
+        ;
+
+        
+    
+    
+            var marker_32f3eb4b7776fd29dbfee4ebb858973d = L.marker(
+                [20.7248, 76.5831],
+                {}
+            ).addTo(map_b0b11ef5aa0a47b7c826ef7a749ccb51);
+        
+    
+            var icon_33b00c3423448e8e482e4ed4531ab64f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_32f3eb4b7776fd29dbfee4ebb858973d.setIcon(icon_33b00c3423448e8e482e4ed4531ab64f);
+        
+    
+        var popup_e8f78d807e1af25a8d9300371ec6d71b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d256d9954368b74a6bc8fcc79481994c = $(`<div id="html_d256d9954368b74a6bc8fcc79481994c" style="width: 100.0%; height: 100.0%;">Akola Toll Plaza</div>`)[0];
+                popup_e8f78d807e1af25a8d9300371ec6d71b.setContent(html_d256d9954368b74a6bc8fcc79481994c);
+            
+        
+
+        marker_32f3eb4b7776fd29dbfee4ebb858973d.bindPopup(popup_e8f78d807e1af25a8d9300371ec6d71b)
+        ;
+
+        
+    
+    
+            var marker_918ae9779a90903cc352147171012020 = L.marker(
+                [21.4234, 79.3512],
+                {}
+            ).addTo(map_b0b11ef5aa0a47b7c826ef7a749ccb51);
+        
+    
+            var icon_ccef7a88c7a240281b2e20df3f2e6f72 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_918ae9779a90903cc352147171012020.setIcon(icon_ccef7a88c7a240281b2e20df3f2e6f72);
+        
+    
+        var popup_4871ea2b367e5a5c7413408692df0b2d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bca1f0a80970dcd40954cf8973541b7e = $(`<div id="html_bca1f0a80970dcd40954cf8973541b7e" style="width: 100.0%; height: 100.0%;">Bhandara Toll Plaza</div>`)[0];
+                popup_4871ea2b367e5a5c7413408692df0b2d.setContent(html_bca1f0a80970dcd40954cf8973541b7e);
+            
+        
+
+        marker_918ae9779a90903cc352147171012020.bindPopup(popup_4871ea2b367e5a5c7413408692df0b2d)
+        ;
+
+        
+    
+    
+            var marker_c3a818d18709f98702ac8bdf4e2144ae = L.marker(
+                [21.7532, 79.6345],
+                {}
+            ).addTo(map_b0b11ef5aa0a47b7c826ef7a749ccb51);
+        
+    
+            var icon_a22e0e3aa10c43c31fa5937beb7e1bbd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_c3a818d18709f98702ac8bdf4e2144ae.setIcon(icon_a22e0e3aa10c43c31fa5937beb7e1bbd);
+        
+    
+        var popup_7d37a8c3f46e1fe8fb4c9ec7c2a3bdc9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ee5ba3e89ce6fa3e06235847ecba0e91 = $(`<div id="html_ee5ba3e89ce6fa3e06235847ecba0e91" style="width: 100.0%; height: 100.0%;">Gondia Toll Plaza</div>`)[0];
+                popup_7d37a8c3f46e1fe8fb4c9ec7c2a3bdc9.setContent(html_ee5ba3e89ce6fa3e06235847ecba0e91);
+            
+        
+
+        marker_c3a818d18709f98702ac8bdf4e2144ae.bindPopup(popup_7d37a8c3f46e1fe8fb4c9ec7c2a3bdc9)
+        ;
+
+        
+    
+    
+            var marker_91d5ec96eaa156d10581ffbf697dc79b = L.marker(
+                [20.3012, 78.2901],
+                {}
+            ).addTo(map_b0b11ef5aa0a47b7c826ef7a749ccb51);
+        
+    
+            var icon_1bdabaea7c7d4c95f304e1ebc81b39e6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_91d5ec96eaa156d10581ffbf697dc79b.setIcon(icon_1bdabaea7c7d4c95f304e1ebc81b39e6);
+        
+    
+        var popup_f957c00b853f18580f697ec4e2c92744 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_250420a3517b983130828f9b9a99f983 = $(`<div id="html_250420a3517b983130828f9b9a99f983" style="width: 100.0%; height: 100.0%;">Yavatmal Toll Plaza</div>`)[0];
+                popup_f957c00b853f18580f697ec4e2c92744.setContent(html_250420a3517b983130828f9b9a99f983);
+            
+        
+
+        marker_91d5ec96eaa156d10581ffbf697dc79b.bindPopup(popup_f957c00b853f18580f697ec4e2c92744)
+        ;
+
+        
+    
+    
+            var marker_64ec9d57e64ae5bf1674a236fefb1cdf = L.marker(
+                [20.9952, 79.0013],
+                {}
+            ).addTo(map_b0b11ef5aa0a47b7c826ef7a749ccb51);
+        
+    
+            var icon_d217ac510127ec689d7d6a50635b29e9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "play", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_64ec9d57e64ae5bf1674a236fefb1cdf.setIcon(icon_d217ac510127ec689d7d6a50635b29e9);
+        
+    
+        var popup_335fb00e2268431eb684f5fb9fa60352 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2bbdc7099e7129f99a6d53baacd55cd3 = $(`<div id="html_2bbdc7099e7129f99a6d53baacd55cd3" style="width: 100.0%; height: 100.0%;">Start Vehicle 1</div>`)[0];
+                popup_335fb00e2268431eb684f5fb9fa60352.setContent(html_2bbdc7099e7129f99a6d53baacd55cd3);
+            
+        
+
+        marker_64ec9d57e64ae5bf1674a236fefb1cdf.bindPopup(popup_335fb00e2268431eb684f5fb9fa60352)
+        ;
+
+        
+    
+    
+            var marker_0f6feda0f90b01ae4b31e4638eee159f = L.marker(
+                [20.7359, 76.5638],
+                {}
+            ).addTo(map_b0b11ef5aa0a47b7c826ef7a749ccb51);
+        
+    
+            var icon_46223e6cfc36f7f11a74996db18b9b8b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "stop", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_0f6feda0f90b01ae4b31e4638eee159f.setIcon(icon_46223e6cfc36f7f11a74996db18b9b8b);
+        
+    
+        var popup_fd8a31eed870c735d69affe3de17a136 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_024328fdbd08e4d67cb4f0669822291c = $(`<div id="html_024328fdbd08e4d67cb4f0669822291c" style="width: 100.0%; height: 100.0%;">End Vehicle 1</div>`)[0];
+                popup_fd8a31eed870c735d69affe3de17a136.setContent(html_024328fdbd08e4d67cb4f0669822291c);
+            
+        
+
+        marker_0f6feda0f90b01ae4b31e4638eee159f.bindPopup(popup_fd8a31eed870c735d69affe3de17a136)
+        ;
+
+        
+    
+    
+            var poly_line_a4a6fda4a585fa5d2bb4f342d2b3f422 = L.polyline(
+                [[20.9952, 79.0013]],
+                {"bubblingMouseEvents": true, "color": "darkgreen", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "darkgreen", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_b0b11ef5aa0a47b7c826ef7a749ccb51);
+        
+    
+            var marker_415282662a0afd3422a96dc262f8615f = L.marker(
+                [20.7025, 78.6022],
+                {}
+            ).addTo(map_b0b11ef5aa0a47b7c826ef7a749ccb51);
+        
+    
+            var icon_b4ba5095dbc421294880d3dda8cea133 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "play", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_415282662a0afd3422a96dc262f8615f.setIcon(icon_b4ba5095dbc421294880d3dda8cea133);
+        
+    
+        var popup_5b75b4c15cd7c963e792b84c5f7721ff = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9ee2bf5e02f40e60dfc827ac65b6f3b2 = $(`<div id="html_9ee2bf5e02f40e60dfc827ac65b6f3b2" style="width: 100.0%; height: 100.0%;">Start Vehicle 2</div>`)[0];
+                popup_5b75b4c15cd7c963e792b84c5f7721ff.setContent(html_9ee2bf5e02f40e60dfc827ac65b6f3b2);
+            
+        
+
+        marker_415282662a0afd3422a96dc262f8615f.bindPopup(popup_5b75b4c15cd7c963e792b84c5f7721ff)
+        ;
+
+        
+    
+    
+            var marker_12937589fe3c7921c1af60a3c216ad05 = L.marker(
+                [19.9512, 77.7859],
+                {}
+            ).addTo(map_b0b11ef5aa0a47b7c826ef7a749ccb51);
+        
+    
+            var icon_0d7ad41b1e193b7dd8e09bea87471765 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "stop", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_12937589fe3c7921c1af60a3c216ad05.setIcon(icon_0d7ad41b1e193b7dd8e09bea87471765);
+        
+    
+        var popup_6f0b2eaa244a80664ad6283813b76e8d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_afed58efe72199e049373b1ac19e7add = $(`<div id="html_afed58efe72199e049373b1ac19e7add" style="width: 100.0%; height: 100.0%;">End Vehicle 2</div>`)[0];
+                popup_6f0b2eaa244a80664ad6283813b76e8d.setContent(html_afed58efe72199e049373b1ac19e7add);
+            
+        
+
+        marker_12937589fe3c7921c1af60a3c216ad05.bindPopup(popup_6f0b2eaa244a80664ad6283813b76e8d)
+        ;
+
+        
+    
+    
+            var poly_line_23142530e4de3c10a34da3183b8ad969 = L.polyline(
+                [[20.7025, 78.6022]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_b0b11ef5aa0a47b7c826ef7a749ccb51);
+        
+    
+            var marker_fdcec9885d974e1f36f4c28b12fec0fb = L.marker(
+                [20.9952, 79.0013],
+                {}
+            ).addTo(map_b0b11ef5aa0a47b7c826ef7a749ccb51);
+        
+    
+            var icon_7f4ae665fa79cbc8af8756b1d17f35c7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "play", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_fdcec9885d974e1f36f4c28b12fec0fb.setIcon(icon_7f4ae665fa79cbc8af8756b1d17f35c7);
+        
+    
+        var popup_5402f708daae16b724c9a016af3c86d1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cedbf36936e7709593197cf1285745af = $(`<div id="html_cedbf36936e7709593197cf1285745af" style="width: 100.0%; height: 100.0%;">Start Vehicle 3</div>`)[0];
+                popup_5402f708daae16b724c9a016af3c86d1.setContent(html_cedbf36936e7709593197cf1285745af);
+            
+        
+
+        marker_fdcec9885d974e1f36f4c28b12fec0fb.bindPopup(popup_5402f708daae16b724c9a016af3c86d1)
+        ;
+
+        
+    
+    
+            var marker_572cecb7fcee4e8097af50e5a188675b = L.marker(
+                [20.7359, 76.5638],
+                {}
+            ).addTo(map_b0b11ef5aa0a47b7c826ef7a749ccb51);
+        
+    
+            var icon_3a5057a0f9f309b4d33e3260d0f3cd48 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "stop", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_572cecb7fcee4e8097af50e5a188675b.setIcon(icon_3a5057a0f9f309b4d33e3260d0f3cd48);
+        
+    
+        var popup_4b444c5f1ec902b4c15be2d48dbb3df6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e6b737e8617586fc232437e62907b8fe = $(`<div id="html_e6b737e8617586fc232437e62907b8fe" style="width: 100.0%; height: 100.0%;">End Vehicle 3</div>`)[0];
+                popup_4b444c5f1ec902b4c15be2d48dbb3df6.setContent(html_e6b737e8617586fc232437e62907b8fe);
+            
+        
+
+        marker_572cecb7fcee4e8097af50e5a188675b.bindPopup(popup_4b444c5f1ec902b4c15be2d48dbb3df6)
+        ;
+
+        
+    
+    
+            var poly_line_36c82efa5af4159447ef21e5a7071134 = L.polyline(
+                [[20.9952, 79.0013]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_b0b11ef5aa0a47b7c826ef7a749ccb51);
+        
+    
+            var marker_cad370810521682ff47ca5e4595d1e65 = L.marker(
+                [20.9952, 79.0013],
+                {}
+            ).addTo(map_b0b11ef5aa0a47b7c826ef7a749ccb51);
+        
+    
+            var icon_e7dd0e45edf1234d131bedf242f31965 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "play", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_cad370810521682ff47ca5e4595d1e65.setIcon(icon_e7dd0e45edf1234d131bedf242f31965);
+        
+    
+        var popup_d2bfd89177b584af6a284abfb73bfe70 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bad92752509fc16b93363bf0ff77307f = $(`<div id="html_bad92752509fc16b93363bf0ff77307f" style="width: 100.0%; height: 100.0%;">Start Vehicle 4</div>`)[0];
+                popup_d2bfd89177b584af6a284abfb73bfe70.setContent(html_bad92752509fc16b93363bf0ff77307f);
+            
+        
+
+        marker_cad370810521682ff47ca5e4595d1e65.bindPopup(popup_d2bfd89177b584af6a284abfb73bfe70)
+        ;
+
+        
+    
+    
+            var marker_32fcd0dd5e0c1c7d695c3eba94df5fe0 = L.marker(
+                [20.7359, 76.5638],
+                {}
+            ).addTo(map_b0b11ef5aa0a47b7c826ef7a749ccb51);
+        
+    
+            var icon_0a58deefbbb23d41edbbad9a4b3175a8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "stop", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_32fcd0dd5e0c1c7d695c3eba94df5fe0.setIcon(icon_0a58deefbbb23d41edbbad9a4b3175a8);
+        
+    
+        var popup_13a84d9645e5d85f97a8e189210ca556 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_eca8b6323f3541fbf56b5b16d13f216d = $(`<div id="html_eca8b6323f3541fbf56b5b16d13f216d" style="width: 100.0%; height: 100.0%;">End Vehicle 4</div>`)[0];
+                popup_13a84d9645e5d85f97a8e189210ca556.setContent(html_eca8b6323f3541fbf56b5b16d13f216d);
+            
+        
+
+        marker_32fcd0dd5e0c1c7d695c3eba94df5fe0.bindPopup(popup_13a84d9645e5d85f97a8e189210ca556)
+        ;
+
+        
+    
+    
+            var poly_line_a754debcdd5288f3b6d153bbf7477175 = L.polyline(
+                [[20.9952, 79.0013]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_b0b11ef5aa0a47b7c826ef7a749ccb51);
+        
+    
+            var marker_f6ce70189f6b6eacf8177e0f939c228d = L.marker(
+                [21.1458, 79.0882],
+                {}
+            ).addTo(map_b0b11ef5aa0a47b7c826ef7a749ccb51);
+        
+    
+            var icon_86a900aaa91db1712f6e54086adf09b5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "play", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_f6ce70189f6b6eacf8177e0f939c228d.setIcon(icon_86a900aaa91db1712f6e54086adf09b5);
+        
+    
+        var popup_e164e8b80f92d777aec0f005fe65f80b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_793edba02ee57edec15d6b58a0439f31 = $(`<div id="html_793edba02ee57edec15d6b58a0439f31" style="width: 100.0%; height: 100.0%;">Start Vehicle 5</div>`)[0];
+                popup_e164e8b80f92d777aec0f005fe65f80b.setContent(html_793edba02ee57edec15d6b58a0439f31);
+            
+        
+
+        marker_f6ce70189f6b6eacf8177e0f939c228d.bindPopup(popup_e164e8b80f92d777aec0f005fe65f80b)
+        ;
+
+        
+    
+    
+            var marker_8120e5c53e7cec7351c549ef7b556308 = L.marker(
+                [21.9042, 80.2458],
+                {}
+            ).addTo(map_b0b11ef5aa0a47b7c826ef7a749ccb51);
+        
+    
+            var icon_91d214165d04585427bb67e96788c69e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "stop", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_8120e5c53e7cec7351c549ef7b556308.setIcon(icon_91d214165d04585427bb67e96788c69e);
+        
+    
+        var popup_ab34ce6486123b4052cb5f40b53a299e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3046ad86e26728afa9f3084c2dba3868 = $(`<div id="html_3046ad86e26728afa9f3084c2dba3868" style="width: 100.0%; height: 100.0%;">End Vehicle 5</div>`)[0];
+                popup_ab34ce6486123b4052cb5f40b53a299e.setContent(html_3046ad86e26728afa9f3084c2dba3868);
+            
+        
+
+        marker_8120e5c53e7cec7351c549ef7b556308.bindPopup(popup_ab34ce6486123b4052cb5f40b53a299e)
+        ;
+
+        
+    
+    
+            var poly_line_fd7dc2beb2e04ef0d584b0a163aa528d = L.polyline(
+                [[21.1458, 79.0882]],
+                {"bubblingMouseEvents": true, "color": "darkgreen", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "darkgreen", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_b0b11ef5aa0a47b7c826ef7a749ccb51);
+        
+</script>
+</html>
